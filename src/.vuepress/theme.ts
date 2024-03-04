@@ -119,7 +119,7 @@ export default hopeTheme({
 
     docsearch: {
       appId: "7WMHCEW1R2",
-      apiKey: "e6d946dc7bae2d580db01a10742752da",
+      apiKey: "e5fc0abfbe4984c22080e7b8c7cd883d",
       indexName: "hataxuio",
       locales: {
         '/': {
