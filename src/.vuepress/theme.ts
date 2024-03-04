@@ -121,22 +121,10 @@ export default hopeTheme({
       appId: "7WMHCEW1R2",
       apiKey: "e5fc0abfbe4984c22080e7b8c7cd883d",
       indexName: "hataxuio",
-      locales: {
-        '/': {
-          placeholder: '搜索文档',
-          translations: {
-            button: {
-              buttonText: '搜索文档',
-            },
-          },
-        },
-        '/en/': {
-          placeholder: 'Search Documentation',
-          translations: {
-            button: {
-              buttonText: 'Search Documentation',
-            },
-          },
+      placeholder: '搜索文档',
+      translations: {
+        button: {
+          buttonText: '搜索文档',
         },
       },
     },
