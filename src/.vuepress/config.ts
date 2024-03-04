@@ -22,9 +22,9 @@ export default defineUserConfig({
 
   plugins: [
     docsearchPlugin({
-      appId: "MDSIF1J6BB",
-      apiKey: "569ec71e1c83402b0a949373f130bcf2",
-      indexName: "hataxu.github.io",
+      appId: "7WMHCEW1R2",
+      apiKey: "e6d946dc7bae2d580db01a10742752da",
+      indexName: "hataxuio",
       locales: {
         '/': {
           placeholder: '搜索文档',
