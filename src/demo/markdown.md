@@ -170,10 +170,10 @@ npm i -D vuepress-theme-hope
 #### 组件
 
 ```component VPCard
-title: Mr.Hope
-desc: Where there is light, there is hope
+title: HanTx
+desc: A VPCard
 logo: https://mister-hope.com/logo.svg
-link: https://mister-hope.com
+link: https://hataxu.github.io
 background: rgba(253, 230, 138, 0.15)
 ```
 
@@ -187,7 +187,7 @@ background: rgba(253, 230, 138, 0.15)
 
 #### 样式化
 
-向 Mr.Hope 捐赠一杯咖啡。 _Recommended_
+给阿姨倒一杯卡布奇诺。 _Recommended_
 
 - [查看详情](https://theme-hope.vuejs.press/zh/guide/markdown/stylize.html)
 

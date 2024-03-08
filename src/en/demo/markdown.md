@@ -190,8 +190,8 @@ Support setting color scheme and size
 #### Component
 
 ```component VPCard
-title: Mr.Hope
-desc: Where there is light, there is hope
+title: HanTx
+desc: A VPCard
 logo: https://mister-hope.com/logo.svg
 link: https://mister-hope.com
 background: rgba(253, 230, 138, 0.15)
@@ -207,7 +207,7 @@ background: rgba(253, 230, 138, 0.15)
 
 #### Stylize
 
-Donate Mr.Hope a cup of coffee. _Recommended_
+A Style. _Recommended_
 
 - [View Detail](https://theme-hope.vuejs.press/guide/markdown/stylize.html)
 

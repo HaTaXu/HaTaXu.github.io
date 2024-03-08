@@ -8,9 +8,9 @@ icon: file
 # 这是侧边栏的顺序
 order: 3
 # 设置作者
-author: Ms.Hope
+author: HanTx
 # 设置写作时间
-date: 2020-01-01
+date: 2024-2-29
 # 一个页面可以有多个分类
 category:
   - 使用指南
@@ -50,8 +50,7 @@ title: 页面标题
 
 你可以在 Markdown 的 Frontmatter 中设置页面信息。
 
-- 作者设置为 Ms.Hope。
-- 写作日期为 2020 年 1 月 1 日
+- 作者设置为 HanTx。
 - 分类为 “使用指南”
 - 标签为 “页面配置” 和 “使用指南”
 
@@ -117,9 +116,9 @@ const MyComponent = defineComponent({
 - 一个卡片:
 
   ```component VPCard
-  title: Mr.Hope
-  desc: Where there is light, there is hope
+  title: HanTx
+  desc: A VPCard
   logo: https://mister-hope.com/logo.svg
-  link: https://mister-hope.com
+  link: https://hataxu.github.io
   background: rgba(253, 230, 138, 0.15)
   ```

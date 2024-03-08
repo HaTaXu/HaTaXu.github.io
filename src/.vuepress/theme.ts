@@ -4,18 +4,16 @@ import { enSidebar, zhSidebar } from "./sidebar";
 import { MR_HOPE_AVATAR } from "./logo.js";
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
+  hostname: "https://hataxu.github.io",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "HanTx",
+    url: "https://hataxu.github.io",
   },
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
-
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "https://github.com/HaTaXu/HaTaXu.github.io",
 
   docsDir: "src",
 
@@ -52,7 +50,7 @@ export default hopeTheme({
       Whatsapp: "https://example.com",
       Youtube: "https://example.com",
       Zhihu: "https://example.com",
-      MrHope: ["https://mister-hope.com", MR_HOPE_AVATAR],
+      HanTx: "https://hataxu.github.io",
     },
   },
 
@@ -69,7 +67,7 @@ export default hopeTheme({
       displayFooter: true,
 
       blog: {
-        description: "一个前端开发者",
+        description: "",
         intro: "/zh/intro.html",
       },
 
@@ -121,10 +119,22 @@ export default hopeTheme({
       appId: "7WMHCEW1R2",
       apiKey: "e5fc0abfbe4984c22080e7b8c7cd883d",
       indexName: "hataxuio",
-      placeholder: '搜索文档',
-      translations: {
-        button: {
-          buttonText: '搜索文档',
+      locales: {
+        '/': {
+          placeholder: '搜索文档',
+          translations: {
+            button: {
+              buttonText: '搜索文档',
+            },
+          },
+        },
+        '/en/': {
+          placeholder: 'Search Documentation',
+          translations: {
+            button: {
+              buttonText: 'Search Documentation',
+            },
+          },
         },
       },
     },
@@ -284,4 +294,4 @@ export default hopeTheme({
     //   },
     // },
   },
-});
+},{ custom: true });
