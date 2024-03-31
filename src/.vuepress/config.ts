@@ -22,7 +22,7 @@ export default defineUserConfig({
 
   plugins: [
     MeiliSearchPlugin({
-      host: "https://47.108.48.215:7700",
+      host: "http://47.108.48.215:7700",
       apiKey: "fb7184124e3a7b10b0e96ad562debf95302a6b218bf32998fa1f33dcb50ee009",
       index: "blog",
     }),
