@@ -123,32 +123,30 @@ export default hopeTheme({
   plugins: {
     blog: true,
 
-
-
     // install @waline/client before enabling it
     // WARNING: This is a test server for demo only.
     // You should create and use your own comment service in production.
-    /*comment: {
-      /!**
+    comment: {
+      /**
        * Using Giscus
-       *!/
+       */
       provider: "Giscus",
       repo: "HaTaXu/HaTaXu.github.io",
       repoId: "R_kgDOLbE7rg",
       category: "Announcements",
       categoryId: "DIC_kwDOLbE7rs4CdtCO",
 
-      /!**
+      /**
        * Using Waline
-       *!/
+       */
       // provider: "Waline",
       // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
 
-      /!**
+      /**
        * Using Artalk
-       *!/
+       */
       // provider: "Artalk",
-    },*/
+    },
 
     components: {
       components: ["Badge", "VPCard"],
