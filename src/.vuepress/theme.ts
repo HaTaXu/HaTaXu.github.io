@@ -1,7 +1,7 @@
-import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar, zhNavbar } from "./navbar";
-import { enSidebar, zhSidebar } from "./sidebar";
-import { MR_HOPE_AVATAR } from "./logo.js";
+import { hopeTheme } from "vuepress-theme-hope"
+import { enNavbar, zhNavbar } from "./navbar"
+import { enSidebar, zhSidebar } from "./sidebar"
+// import { MR_HOPE_AVATAR } from "./logo.js"
 
 export default hopeTheme({
   hostname: "https://hataxu.github.io",
@@ -16,6 +16,8 @@ export default hopeTheme({
   repo: "https://github.com/HaTaXu/HaTaXu.github.io",
 
   docsDir: "src",
+
+  darkmode: "toggle",
 
   blog: {
     medias: {
@@ -112,57 +114,41 @@ export default hopeTheme({
   // enable it to preview all changes in time
   // hotReload: true,
 
+  navbarLayout: {
+    start: ["Brand"],
+    center: ["Links"],
+    end: ["Language", "Repo", "Outlook", "MeiliSearch"],
+  },
+
   plugins: {
     blog: true,
 
-    docsearch: {
-      appId: "7WMHCEW1R2",
-      apiKey: "e5fc0abfbe4984c22080e7b8c7cd883d",
-      indexName: "hataxuio",
-      locales: {
-        '/': {
-          placeholder: '搜索文档',
-          translations: {
-            button: {
-              buttonText: '搜索文档',
-            },
-          },
-        },
-        '/en/': {
-          placeholder: 'Search Documentation',
-          translations: {
-            button: {
-              buttonText: 'Search Documentation',
-            },
-          },
-        },
-      },
-    },
+
 
     // install @waline/client before enabling it
     // WARNING: This is a test server for demo only.
     // You should create and use your own comment service in production.
-    comment: {
-      /**
+    /*comment: {
+      /!**
        * Using Giscus
-       */
+       *!/
       provider: "Giscus",
       repo: "HaTaXu/HaTaXu.github.io",
       repoId: "R_kgDOLbE7rg",
       category: "Announcements",
       categoryId: "DIC_kwDOLbE7rs4CdtCO",
 
-      /**
+      /!**
        * Using Waline
-       */
+       *!/
       // provider: "Waline",
       // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
 
-      /**
+      /!**
        * Using Artalk
-       */
+       *!/
       // provider: "Artalk",
-    },
+    },*/
 
     components: {
       components: ["Badge", "VPCard"],
@@ -183,7 +169,11 @@ export default hopeTheme({
       stylize: [
         {
           matcher: "Recommended",
-          replacer: ({ tag }) => {
+          replacer: ({ tag }): {
+            tag: string;
+            attrs: Record<string, string>;
+            content: string;
+          } | void => {
             if (tag === "em")
               return {
                 tag: "Badge",
