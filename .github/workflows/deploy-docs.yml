@@ -56,7 +56,7 @@ jobs:
     steps:
       - name: test meilisearch
         run: |
-          docker ps
+          docker images
 
       - name: test path
         run: |
