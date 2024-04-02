@@ -1,0 +1,28 @@
+{
+  "index_uid": "blog",
+  "start_urls": [
+    "https://hataxu.github.io"
+  ],
+  "stop_urls": [],
+  "scrape_start_urls": false,
+  "sitemap_urls": [
+    "https://hataxu.github.io/sitemap"
+  ],
+  "selectors": {
+    "lvl0": {
+      "selector": "p.sidebar-heading.open",
+      "global": true,
+      "default_value": "文档"
+    },
+    "lvl1": {
+      "selector": ".vp-page h1, .vp-page .page-category-info, .vp-page .page-tag-info",
+      "global": true,
+      "default_value": "章节"
+    },
+    "lvl2": ".theme-hope-content h2",
+    "lvl3": ".theme-hope-content h3",
+    "lvl4": ".theme-hope-content h4",
+    "lvl5": ".theme-hope-content h5",
+    "text": ".theme-hope-content p, .theme-hope-content ul li, .theme-hope-content div"
+  }
+}
