@@ -54,6 +54,20 @@ jobs:
     name: 部署 meilisearch
     runs-on: ubuntu-latest
     steps:
-      - name: Test ip
+      - name: pull and run meilisearch
         run: |
-          curl ifconfig.me
+          docker run -d -it --rm \
+          --name meilisearch \
+          -p 7700:7700 \
+          -v $(pwd)/meili_data:/meili_data \
+          getmeili/meilisearch:latest \
+          meilisearch --master-key="${{ secrets.MEILISEARCH_MASTER_KEY }}"
+
+      - name: test meilisearch
+        run: |
+          docker ps
+
+      - name: test path
+        run: |
+          cd ~/meili_data
+          ls
