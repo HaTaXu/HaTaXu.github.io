@@ -22,8 +22,8 @@ export default defineUserConfig({
 
   plugins: [
     MeiliSearchPlugin({
-      host: "http://47.108.48.215:7700",
-      apiKey: "fb7184124e3a7b10b0e96ad562debf95302a6b218bf32998fa1f33dcb50ee009",
+      host: "https://search.shaanstar.art/",
+      apiKey: "d7378b222aaf0c0b270920125e5bf0dbc27aead34a782772f72ddab524bc6ed6",
       index: "blog",
     }),
   ]
