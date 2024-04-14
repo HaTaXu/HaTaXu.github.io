@@ -1,10 +1,10 @@
 ---
 title: 配置AList
-category: Linux
+category: Ubuntu
 tag:
   - docker
   - AList
-  - Linux
+  - Ubuntu
 ---
 
 # 配置 AList

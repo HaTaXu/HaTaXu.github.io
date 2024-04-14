@@ -1,10 +1,10 @@
 ---
 title: 配置MeiliSearch
-category: Linux
+category: Ubuntu
 tag:
   - docker
   - MeiliSearch
-  - Linux
+  - Ubuntu
 ---
 
 # 配置 MeiliSearch
@@ -25,6 +25,8 @@ docker run -d --name meilisearch \
 在浏览器中输入 IP:7700，出现以下页面表示成功：\
 ![MeiliSearch Mini Dashboard](../../.vuepress/public/assets/images/dashboard.png)
 ## 4. 使用 CURL 命令获取两个 key
+### CURL命令简介
+>CURL（CommandLine Uniform Resource Locator），是一个利用 URL 语法，在命令行终端下使用的网络请求工具，支持 HTTP、HTTPS、FTP 等协议。CURL 也有用于程序开发使用的版本 libcurl。
 运行
 ```sh
 curl \
@@ -171,4 +173,18 @@ curl \
 curl \
   -X DELETE 'http://localhost:7700/indexes/blog' \
   -H 'Authorization: Bearer MASTER_KEY'
+```
+## 7. 运行爬虫，完善索引
+拉取爬虫( `docs-scraper` )镜像
+```shell
+docker pull getmeili/docs-scraper
+```
+先设置好配置文件 `config.json` 的路径
+运行爬虫镜像
+```shell
+docker run -it --rm --name scraper \
+    -e MEILISEARCH_HOST_URL='https://search.shaanstar.art' \
+    -e MEILISEARCH_API_KEY='MASTER_KEY' \
+    -v /etc/docs-scraper/config.json:/docs-scraper/config.json \
+    getmeili/docs-scraper:latest pipenv run ./docs_scraper config.json
 ```

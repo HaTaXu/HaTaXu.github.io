@@ -70,7 +70,7 @@ export default hopeTheme({
 
       blog: {
         description: "",
-        intro: "/zh/intro.html",
+        intro: "/intro.html",
       },
 
       // page meta
@@ -95,7 +95,7 @@ export default hopeTheme({
 
       blog: {
         description: "A FrontEnd programmer",
-        intro: "/intro.html",
+        intro: "/en/intro.html",
       },
 
       metaLocales: {

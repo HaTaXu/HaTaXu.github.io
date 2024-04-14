@@ -1,6 +1,6 @@
 ---
 title: Ubuntu 初始化
-category: Linux
+category: Ubuntu
 tag:
   - apt
   - Ubuntu

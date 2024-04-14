@@ -10,19 +10,20 @@
   ],
   "selectors": {
     "lvl0": {
-      "selector": "p.sidebar-heading.open",
+      "selector": ".vp-page.page-date-info, .vp-page.page-category-info span, .vp-page.page-tag-info span",
       "global": true,
-      "default_value": "文档"
+      "default_value": "预览"
     },
     "lvl1": {
-      "selector": ".vp-page h1, .vp-page .page-category-info, .vp-page .page-tag-info",
+      "selector": ".vp-page h1",
       "global": true,
-      "default_value": "章节"
+      "default_value": "文章"
     },
-    "lvl2": ".theme-hope-content h2",
-    "lvl3": ".theme-hope-content h3",
-    "lvl4": ".theme-hope-content h4",
-    "lvl5": ".theme-hope-content h5",
-    "text": ".theme-hope-content p, .theme-hope-content ul li, .theme-hope-content div"
-  }
+    "lvl2": ".theme-hope-content h2 a span",
+    "lvl3": ".theme-hope-content h3 a span",
+    "lvl4": ".theme-hope-content h4 a span",
+    "lvl5": ".theme-hope-content h5 a span",
+    "text": ".theme-hope-content p, .theme-hope-content ul li, .theme-hope-content div ul, .theme-hope-content div p"
+  },
+  "selectors_exclude": ["iframe"]
 }

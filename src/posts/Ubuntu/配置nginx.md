@@ -1,9 +1,9 @@
 ---
 title: 配置nginx
-category: Linux
+category: Ubuntu
 tag:
   - nginx
-  - Linux
+  - Ubuntu
   - docker
 ---
 
@@ -32,27 +32,38 @@ nginx
 ## 5. 修改配置文件中的 https 设置
 加上：
 ```
+upstream shaanstar {
+    server 8.130.104.37:29475;
+}
+
 server {
-        listen       443 ssl;
-        server_name  www.shaanstar.art;
+    listen       443 ssl;
+    server_name  www.shaanstar.art;
 
-        ssl_certificate      cert/www.shaanstar.art.pem;
-        ssl_certificate_key  cert/www.shaanstar.art.key;
+    ssl_certificate      cert/www.shaanstar.art.pem;
+    ssl_certificate_key  cert/www.shaanstar.art.key;
 
-        ssl_session_cache    shared:SSL:1m;
-        ssl_session_timeout  5m;
+    ssl_session_cache    shared:SSL:1m;
+    ssl_session_timeout  5m;
 
-        ssl_ciphers  HIGH:!aNULL:!MD5;
-        ssl_prefer_server_ciphers  on;
+    ssl_ciphers  HIGH:!aNULL:!MD5;
+    ssl_prefer_server_ciphers  on;
 
-        location / {
-            proxy_pass https://8.130.104.37:29475;
-            root   html;
-            index  index.html index.htm;
-        }
+    location / {
+        proxy_pass https://shaanstar;
     }
+}
 ```
 ## 6. 重启 nginx 容器
 ```sh
 docker restart nginx
 ```
+## 7. 进入 nginx 容器内部
+```shell
+docker exec -it nginx /bin/bash
+```
+可以运行
+```shell
+nginx -V
+```
+以查看 `nginx` 的详细信息
