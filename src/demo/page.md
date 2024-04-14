@@ -12,8 +12,7 @@ author: HanTx
 # 设置写作时间
 date: 2024-2-29
 # 一个页面可以有多个分类
-category:
-  - 使用指南
+category: 使用指南
 # 一个页面可以有多个标签
 tag:
   - 页面配置
