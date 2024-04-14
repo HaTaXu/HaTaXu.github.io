@@ -10,19 +10,20 @@
   ],
   "selectors": {
     "lvl0": {
-      "selector": ".vp-page.page-date-info, .vp-page.page-category-info span, .vp-page.page-tag-info span",
+      "selector": ".vp-page-title h1",
+      "global": true,
+      "default_value": "标题"
+    },
+    "lvl1": {
+      "selector": ".page-date-info span, .page-category-info span, .page-tag-info span",
       "global": true,
       "default_value": "预览"
     },
-    "lvl1": {
-      "selector": ".vp-page h1",
-      "global": true,
-      "default_value": "文章"
-    },
-    "lvl2": ".theme-hope-content h2 a span",
-    "lvl3": ".theme-hope-content h3 a span",
-    "lvl4": ".theme-hope-content h4 a span",
-    "lvl5": ".theme-hope-content h5 a span",
+    "lvl2": ".theme-hope-content h1 a span",
+    "lvl3": ".theme-hope-content h2 a span",
+    "lvl4": ".theme-hope-content h3 a span",
+    "lvl5": ".theme-hope-content h4 a span",
+    "lvl6": ".theme-hope-content h5 a span",
     "text": ".theme-hope-content p, .theme-hope-content ul li, .theme-hope-content div ul, .theme-hope-content div p"
   },
   "selectors_exclude": ["iframe"]
