@@ -13,14 +13,15 @@ jobs:
       - name: Checkout docs-scraper-config.json
         uses: actions/checkout@v4
         with:
-          path: /etc/docs-scraper
+          path: $(pwd)/docs-scraper
           sparse-checkout: |
             docs-scraper-config.json
+
 
       - name: run docs-scraper
         run: |
           docker run -it --rm --name scraper \
               -e MEILISEARCH_HOST_URL='https://search.shaanstar.art' \
               -e MEILISEARCH_API_KEY='${{ secrets.MEILISEARCH_MASTER_KEY }}' \
-              -v /etc/docs-scraper/config.json:/docs-scraper/config.json \
+              -v $(pwd)/docs-scraper/config.json:/docs-scraper/config.json \
               getmeili/docs-scraper:latest pipenv run ./docs_scraper config.json
