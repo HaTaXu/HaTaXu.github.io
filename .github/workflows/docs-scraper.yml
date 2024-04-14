@@ -20,8 +20,8 @@ jobs:
 
       - name: run docs-scraper
         run: |
-          docker run -it --rm --name scraper \
+          docker run -it --rm \
               -e MEILISEARCH_HOST_URL='https://search.shaanstar.art' \
               -e MEILISEARCH_API_KEY='${{ secrets.MEILISEARCH_MASTER_KEY }}' \
               -v $(pwd)/docs-scraper/config.json:/docs-scraper/config.json \
-              getmeili/docs-scraper:latest pipenv run ./docs_scraper config.json
+              getmeili/docs-scraper:latest pipenv run $(pwd)/docs_scraper config.json

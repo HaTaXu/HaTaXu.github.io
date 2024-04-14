@@ -182,7 +182,7 @@ docker pull getmeili/docs-scraper
 先设置好配置文件 `config.json` 的路径
 运行爬虫镜像
 ```shell
-docker run -it --rm --name scraper \
+docker run -it --rm \
     -e MEILISEARCH_HOST_URL='https://search.shaanstar.art' \
     -e MEILISEARCH_API_KEY='MASTER_KEY' \
     -v /etc/docs-scraper/config.json:/docs-scraper/config.json \
