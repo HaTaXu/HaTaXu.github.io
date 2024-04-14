@@ -23,7 +23,7 @@ docker run -d --name meilisearch \
 运行镜像时可以指定 `MASTER_KEY`，若未指定将生成一个 `MASTER_KEY`
 ## 3. 进入 MeiliSearch Mini Dashboard 验证是否成功
 在浏览器中输入 IP:7700，出现以下页面表示成功：\
-![MeiliSearch Mini Dashboard](../../../.vuepress/public/assets/images/dashboard.png)
+![MeiliSearch Mini Dashboard](../../.vuepress/public/assets/images/dashboard.png)
 ## 4. 使用 CURL 命令获取两个 key
 运行
 ```sh
