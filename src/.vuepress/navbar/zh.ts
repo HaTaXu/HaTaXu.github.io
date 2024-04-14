@@ -18,36 +18,24 @@ export const zhNavbar = navbar([
         ],
       },
       {
-        text: "Linux",
+        text: "CentOS",
         icon: "pen-to-square",
-        prefix: "Linux/",
+        prefix: "CentOS/",
         children: [
-          {
-            text: "CentOS",
-            icon: "pen-to-square",
-            prefix: "CentOS/",
-            children: [
-              { text: "CentOS初始化", icon: "pen-to-square", link: "CentOS初始化" },
-            ],
-          },
-          {
-            text: "Ubuntu",
-            icon: "pen-to-square",
-            prefix: "Ubuntu/",
-            children: [
-              { text: "Ubuntu初始化", icon: "pen-to-square", link: "Ubuntu初始化" },
-              { text: "配置AList", icon: "pen-to-square", link: "配置AList" },
-              { text: "配置MeiliSearch", icon: "pen-to-square", link: "配置MeiliSearch" },
-              { text: "配置nginx", icon: "pen-to-square", link: "配置nginx" },
-            ],
-          },
+          { text: "CentOS初始化", icon: "pen-to-square", link: "CentOS初始化" },
+        ],
+      },
+      {
+        text: "Ubuntu",
+        icon: "pen-to-square",
+        prefix: "Ubuntu/",
+        children: [
+          { text: "Ubuntu初始化", icon: "pen-to-square", link: "Ubuntu初始化" },
+          { text: "配置AList", icon: "pen-to-square", link: "配置AList" },
+          { text: "配置MeiliSearch", icon: "pen-to-square", link: "配置MeiliSearch" },
+          { text: "配置nginx", icon: "pen-to-square", link: "配置nginx" },
         ],
       },
     ],
-  },
-  {
-    text: "V2 文档",
-    icon: "book",
-    link: "https://theme-hope.vuejs.press/zh/",
   },
 ]);
