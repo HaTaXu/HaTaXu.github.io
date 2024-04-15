@@ -13,8 +13,8 @@ export const zhNavbar = navbar([
         icon: "pen-to-square",
         prefix: "AList/",
         children: [
-          { text: "发布到docker", icon: "pen-to-square", link: "发布到github" },
-          { text: "发布到github", icon: "pen-to-square", link: "发布到github" },
+          { text: "发布docker版本", icon: "pen-to-square", link: "发布docker版本" },
+          { text: "发布GitHub版本", icon: "pen-to-square", link: "发布GitHub版本" },
         ],
       },
       {

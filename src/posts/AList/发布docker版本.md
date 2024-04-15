@@ -1,5 +1,5 @@
 ---
-title: 发布到 docker
+title: 发布 docker 版本
 category: AList部署
 tag:
   - docker

@@ -7,6 +7,7 @@ tag:
   - Docker
 ---
 
+# Ubuntu 初始化
 # 与 CentOS 的区别
 >1. 常见的安装包格式deb包、安装rpm包的命令：deb-参数
 >2. 包管理工具apt-get
