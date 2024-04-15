@@ -3,7 +3,18 @@
   "start_urls": [
     "https://hataxu.github.io"
   ],
-  "stop_urls": [],
+  "stop_urls": [
+    "https://hataxu.github.io/timeline/",
+    "https://hataxu.github.io/tag/",
+    "https://hataxu.github.io/category/",
+    "https://hataxu.github.io/article/",
+    "https://hataxu.github.io/star/",
+    "https://hataxu.github.io/en/timeline/",
+    "https://hataxu.github.io/en/tag/",
+    "https://hataxu.github.io/en/category/",
+    "https://hataxu.github.io/en/article/",
+    "https://hataxu.github.io/en/star/"
+  ],
   "scrape_start_urls": false,
   "sitemap_urls": [
     "https://hataxu.github.io/sitemap"
