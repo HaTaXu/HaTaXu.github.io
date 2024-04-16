@@ -1,5 +1,5 @@
 ---
-title: 发布到 github
+title: 发布 github 版本
 category: AList部署
 tag:
   - Github
