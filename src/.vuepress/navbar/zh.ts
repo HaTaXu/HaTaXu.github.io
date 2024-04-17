@@ -17,7 +17,7 @@ export const zhNavbar = navbar([
           { text: "简单 CNN 模型", icon: "pen-to-square", link: "简单CNN模型" },
         ],
       },
-    ]
+    ],
   },
   {
     text: "技术",
