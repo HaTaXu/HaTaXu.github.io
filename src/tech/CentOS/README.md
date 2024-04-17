@@ -1,4 +1,6 @@
 ---
 title: CentOS
-icon: centos
+index: false
+dir:
+  link: false
 ---

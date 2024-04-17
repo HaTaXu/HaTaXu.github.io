@@ -1,4 +1,6 @@
 ---
 title: AList
-icon: list
+index: false
+dir:
+  link: false
 ---

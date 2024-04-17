@@ -1,4 +1,6 @@
 ---
 title: GitHub Actions
-icon: github
+index: false
+dir:
+  link: false
 ---

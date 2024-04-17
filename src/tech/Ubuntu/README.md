@@ -1,4 +1,6 @@
 ---
 title: Ubuntu
-icon: ubuntu
+index: false
+dir:
+  link: false
 ---

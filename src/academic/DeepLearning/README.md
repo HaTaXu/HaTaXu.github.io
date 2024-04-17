@@ -1,4 +1,6 @@
 ---
 title: 深度学习
-icon: share-knowledge
+index: false
+dir:
+  link: false
 ---
