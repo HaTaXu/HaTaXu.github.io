@@ -7,20 +7,27 @@ export const zhSidebar = sidebar({
       text: "如何使用",
       icon: "laptop-code",
       prefix: "demo/",
-      link: "demo/",
       children: "structure",
     },
     {
       text: "专业知识",
       icon: "book",
       prefix: "academic/",
-      children: "structure",
+      children: [
+        "DeepLearning/"
+      ],
     },
     {
       text: "技术",
       icon: "book",
       prefix: "tech/",
-      children: "structure",
+      children: [
+        "AList/",
+        "CentOS/",
+        "GitHub_Actions/",
+        "SpringBoot/",
+        "Ubuntu/"
+      ],
     },
     "intro",
     {
