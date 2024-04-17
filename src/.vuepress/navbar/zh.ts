@@ -44,7 +44,7 @@ export const zhNavbar = navbar([
       {
         text: "GitHub Actions",
         icon: "pen-to-square",
-        prefix: "GitHub Actions/",
+        prefix: "GitHub_Actions/",
         children: [
           { text: "自动爬虫", icon: "pen-to-square", link: "自动爬虫" },
         ],
