@@ -4,11 +4,13 @@
     "https://hataxu.github.io"
   ],
   "stop_urls": [
+    "https://hataxu.github.io/demo/",
     "https://hataxu.github.io/timeline/",
     "https://hataxu.github.io/tag/",
     "https://hataxu.github.io/category/",
     "https://hataxu.github.io/article/",
     "https://hataxu.github.io/star/",
+    "https://hataxu.github.io/en/demo/",
     "https://hataxu.github.io/en/timeline/",
     "https://hataxu.github.io/en/tag/",
     "https://hataxu.github.io/en/category/",
