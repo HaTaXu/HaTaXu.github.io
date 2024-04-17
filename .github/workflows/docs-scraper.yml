@@ -4,7 +4,8 @@ on:
     branches:
       - main
     paths:
-      - 'src/posts/**'
+      - 'src/academic/**'
+      - 'src/tech/**'
       - 'docs-scraper-config.json'
 jobs:
   docs-scraper:
