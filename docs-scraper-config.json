@@ -26,7 +26,7 @@
       "default_value": "标题"
     },
     "lvl1": {
-      "selector": ".page-date-info span, .page-category-info span, .page-tag-info span",
+      "selector": ".page-category-info span, .page-tag-info span",
       "global": true,
       "default_value": "预览"
     },
