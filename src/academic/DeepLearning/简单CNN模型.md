@@ -1,6 +1,6 @@
 ---
 title: 简单 CNN 模型
-category: DeepLearning
+category: 深度学习
 tag:
   - CNN
   - python
