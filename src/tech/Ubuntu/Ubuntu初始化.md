@@ -43,8 +43,8 @@ E: Unable to lock the administration directory (/var/lib/dpkg/), is another proc
 # '-9'是信息编号，表示杀死一个进程
 kill -9 25816
 ```
-执行该命令后重新运行 `install the Docker packages` 的命令后成功下载docker。\
-之后运行 `docker info` 查看docker基本信息。
+执行该命令后重新运行`install the Docker packages`的命令后成功下载docker。\
+之后运行`docker info`查看docker基本信息。
 # 常用 docker 命令
 ## 1. 用 docker 拉取 AList 镜像
 ```sh

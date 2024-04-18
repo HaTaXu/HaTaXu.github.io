@@ -66,4 +66,4 @@ docker exec -it nginx /bin/bash
 ```shell
 nginx -V
 ```
-以查看 `nginx` 的详细信息
+以查看`nginx`的详细信息

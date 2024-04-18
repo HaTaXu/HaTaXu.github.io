@@ -20,7 +20,7 @@ docker run -d --name meilisearch \
   getmeili/meilisearch:latest \
   meilisearch --master-key="MASTER_KEY"
 ```
-运行镜像时可以指定 `MASTER_KEY`，若未指定将生成一个 `MASTER_KEY`
+运行镜像时可以指定`MASTER_KEY`，若未指定将生成一个`MASTER_KEY`
 ## 3. 进入 MeiliSearch Mini Dashboard 验证是否成功
 在浏览器中输入 IP:7700，出现以下页面表示成功：\
 ![MeiliSearch Mini Dashboard](../../.vuepress/public/assets/images/dashboard.png)
@@ -33,7 +33,7 @@ curl \
   -X GET 'http://localhost:7700/keys' \
   -H "Authorization: Bearer MASTER_KEY"
 ```
-将返回一段 `json` 数据：
+将返回一段`json`数据：
 ```json
 {
   "results": [
@@ -74,7 +74,7 @@ curl \
 }
 ```
 ## 5. 回到 dashboard，输入 Default Admin API Key
-点击右上角 `Api Key`，输入 `Default Admin API Key`。
+点击右上角`Api Key`，输入`Default Admin API Key`。
 ## 6. 操作索引 (index)
 ### creat index
 运行
@@ -114,7 +114,7 @@ curl \
   "primaryKey": null
 }
 ```
-其中未指定 `primaryKey` 时，不会自动生成，默认值为 `null`。
+其中未指定`primaryKey`时，不会自动生成，默认值为`null`。
 ### list index
 运行
 ```shell
@@ -157,7 +157,7 @@ curl \
   "enqueuedAt": "2024-04-14T04:10:08.430973479Z"
 }
 ```
-查看 `blog` 索引
+查看`blog`索引
 ```json
 {
   "uid": "blog",
@@ -175,11 +175,11 @@ curl \
   -H 'Authorization: Bearer MASTER_KEY'
 ```
 ## 7. 运行爬虫，完善索引
-拉取爬虫( `docs-scraper` )镜像
+拉取爬虫(`docs-scraper`)镜像
 ```shell
 docker pull getmeili/docs-scraper
 ```
-先设置好配置文件 `config.json` 的路径，修改配置
+先设置好配置文件`config.json`的路径，修改配置
 运行爬虫镜像
 ```shell
 docker run --rm \
