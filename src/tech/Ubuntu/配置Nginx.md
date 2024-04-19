@@ -1,5 +1,5 @@
 ---
-title: 配置nginx
+title: 配置Nginx
 category: Ubuntu
 tag:
   - nginx

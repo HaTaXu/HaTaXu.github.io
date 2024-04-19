@@ -53,8 +53,9 @@ export const zhNavbar = navbar([
         icon: "pen-to-square",
         prefix: "SpringBoot/",
         children: [
-          { text: "环境配置", icon: "pen-to-square", link: "环境配置" },
+          { text: "基本概念", icon: "pen-to-square", link: "基本概念" },
           { text: "controller 层", icon: "pen-to-square", link: "controller层" },
+          { text: "hibernate", icon: "pen-to-square", link: "hibernate" },
         ],
       },
       {
@@ -65,7 +66,7 @@ export const zhNavbar = navbar([
           { text: "Ubuntu 初始化", icon: "pen-to-square", link: "Ubuntu初始化" },
           { text: "配置 AList", icon: "pen-to-square", link: "配置AList" },
           { text: "配置 MeiliSearch", icon: "pen-to-square", link: "配置MeiliSearch" },
-          { text: "配置 nginx", icon: "pen-to-square", link: "配置nginx" },
+          { text: "配置 Nginx", icon: "pen-to-square", link: "配置Nginx" },
         ],
       },
     ],

@@ -11,13 +11,15 @@ export default hopeTheme({
     url: "https://hataxu.github.io",
   },
 
-  iconAssets: "fontawesome-with-brands",
+  iconAssets: "fontawesome",
 
   repo: "https://github.com/HaTaXu/HaTaXu.github.io",
 
   docsDir: "src",
 
   darkmode: "toggle",
+
+  fullscreen: true,
 
   blog: {
     medias: {
@@ -32,9 +34,9 @@ export default hopeTheme({
       Facebook: "https://example.com",
       Flipboard: "https://example.com",
       Gitee: "https://example.com",
-      GitHub: "https://example.com",
+      GitHub: "https://github.com/HaTaXu",
       Gitlab: "https://example.com",
-      Gmail: "mailto:info@example.com",
+      Gmail: "hantx294@gmail.com",
       Instagram: "https://example.com",
       Lark: "https://example.com",
       Lines: "https://example.com",
@@ -117,7 +119,7 @@ export default hopeTheme({
   navbarLayout: {
     start: ["Brand"],
     center: ["Links"],
-    end: ["Language", "Repo", "Outlook", "MeiliSearch"],
+    end: ["Repo", "Outlook", "MeiliSearch"],
   },
 
   plugins: {

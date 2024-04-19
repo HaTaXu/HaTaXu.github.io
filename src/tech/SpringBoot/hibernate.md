@@ -25,7 +25,7 @@ tag:
 2. 与`Session`没有任何关系，也就是没有通过`Session`对象的实例对其进行任何持久化的操作。\
 举例：
 ```
-User user=new User();      // user是一个瞬时对象，在数据库的表中是没有记录和该对象相对应的。和session没有关系。
+User user=new User(); // user是一个瞬时对象，在数据库的表中是没有记录和该对象相对应的。和session没有关系。
 user.setName(“ddd”);
 user.setBirthday(new Date());
 session.save(user); //持久化状态
@@ -44,12 +44,12 @@ session.save(user); //持久化状态
 3. `Hibernate`会根据持久态对象的属性的变化而改变数据库中的相应记录。
 举例：
 ```
-Session session = factory.openSession();    
+Session session = factory.openSession();
 Transaction tx = session.beginTransaction();
-session.save(stu); // persistent持久化状态    
+session.save(stu); // persistent持久化状态
 System.out.println(stu);
-tx.commit();    
-session.close();    //执行close()方法之后，就会由持久对象转换成脱管对象
+tx.commit();
+session.close(); //执行close()方法之后，就会由持久对象转换成脱管对象
 System.out.println(stu); // 脱管对象
 ```
 ## 脱管态`Detached`
