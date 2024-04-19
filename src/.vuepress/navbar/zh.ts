@@ -4,12 +4,12 @@ export const zhNavbar = navbar([
   "/",
   {
     text: "专业知识",
-    icon: "pen-to-square",
+    icon: "fa-solid fa-graduation-cap",
     prefix: "/academic/",
     children: [
       {
         text: "深度学习",
-        icon: "pen-to-square",
+        icon: "fa-solid fa-robot",
         prefix: "DeepLearning/",
         children: [
           { text: "环境配置", icon: "pen-to-square", link: "环境配置" },
@@ -20,12 +20,12 @@ export const zhNavbar = navbar([
   },
   {
     text: "技术",
-    icon: "pen-to-square",
+    icon: "fa-solid fa-code",
     prefix: "/tech/",
     children: [
       {
         text: "AList",
-        icon: "pen-to-square",
+        icon: "fa-solid fa-list-ul",
         prefix: "AList/",
         children: [
           { text: "发布 docker 版本", icon: "pen-to-square", link: "发布docker版本" },
@@ -34,7 +34,7 @@ export const zhNavbar = navbar([
       },
       {
         text: "CentOS",
-        icon: "pen-to-square",
+        icon: "fa-brands fa-centos",
         prefix: "CentOS/",
         children: [
           { text: "CentOS 初始化", icon: "pen-to-square", link: "CentOS初始化" },
@@ -42,7 +42,7 @@ export const zhNavbar = navbar([
       },
       {
         text: "GitHub Actions",
-        icon: "pen-to-square",
+        icon: "fa-brands fa-github",
         prefix: "GitHub_Actions/",
         children: [
           { text: "自动爬虫", icon: "pen-to-square", link: "自动爬虫" },
@@ -50,7 +50,7 @@ export const zhNavbar = navbar([
       },
       {
         text: "SpringBoot",
-        icon: "pen-to-square",
+        icon: "fa-brands fa-java",
         prefix: "SpringBoot/",
         children: [
           { text: "基本概念", icon: "pen-to-square", link: "基本概念" },
@@ -60,7 +60,7 @@ export const zhNavbar = navbar([
       },
       {
         text: "Ubuntu",
-        icon: "pen-to-square",
+        icon: "fa-brands fa-ubuntu",
         prefix: "Ubuntu/",
         children: [
           { text: "Ubuntu 初始化", icon: "pen-to-square", link: "Ubuntu初始化" },
