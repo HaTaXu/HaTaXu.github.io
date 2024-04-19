@@ -11,7 +11,7 @@ export default hopeTheme({
     url: "https://hataxu.github.io",
   },
 
-  iconAssets: "fontawesome",
+  iconAssets: "fontawesome-with-brands",
 
   repo: "https://github.com/HaTaXu/HaTaXu.github.io",
 

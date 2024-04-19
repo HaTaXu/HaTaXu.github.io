@@ -1,6 +1,6 @@
 ---
 title: GitHub Actions
-icon: fa fa-github
+icon: fa-brands fa-github
 index: false
 dir:
   link: false
