@@ -16,6 +16,6 @@
     "vuepress-theme-hope": "2.0.0-rc.36",
     "@vuepress/bundler-vite": "2.0.0-rc.8",
     "vuepress-plugin-meilisearch2": "0.3.0",
-    "markdown-it-katex": "2.0.3"
+    "katex": "0.16.10"
   }
 }

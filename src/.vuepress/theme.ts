@@ -164,6 +164,7 @@ export default hopeTheme({
       imgSize: true,
       include: true,
       mark: true,
+      katex: true,
       stylize: [
         {
           matcher: "Recommended",
