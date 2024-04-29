@@ -12,6 +12,7 @@ export const zhNavbar = navbar([
         icon: "fa-solid fa-robot",
         prefix: "DeepLearning/",
         children: [
+          { text: "基本概念", icon: "pen-to-square", link: "基本概念" },
           { text: "环境配置", icon: "pen-to-square", link: "环境配置" },
           { text: "简单 CNN 模型", icon: "pen-to-square", link: "简单CNN模型" },
         ],
