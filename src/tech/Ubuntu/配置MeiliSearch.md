@@ -23,7 +23,7 @@ docker run -d --name meilisearch \
 运行镜像时可以指定`MASTER_KEY`，若未指定将生成一个`MASTER_KEY`
 ## 3. 进入 MeiliSearch Mini Dashboard 验证是否成功
 在浏览器中输入 IP:7700，出现以下页面表示成功：\
-![MeiliSearch Mini Dashboard](../../.vuepress/public/assets/images/dashboard.png)
+![](../../.vuepress/public/assets/images/dashboard.png "MeiliSearch Mini Dashboard")
 ## 4. 使用 CURL 命令获取两个 key
 ### CURL命令简介
 >CURL（CommandLine Uniform Resource Locator），是一个利用 URL 语法，在命令行终端下使用的网络请求工具，支持 HTTP、HTTPS、FTP 等协议。CURL 也有用于程序开发使用的版本 libcurl。

@@ -19,8 +19,6 @@ export default hopeTheme({
 
   darkmode: "toggle",
 
-  fullscreen: true,
-
   blog: {
     medias: {
       Baidu: "https://example.com",
@@ -119,7 +117,7 @@ export default hopeTheme({
   navbarLayout: {
     start: ["Brand"],
     center: ["Links"],
-    end: ["Repo", "Outlook", "MeiliSearch"],
+    end: ["Outlook", "fullscreen", "Repo", "MeiliSearch"],
   },
 
   plugins: {
