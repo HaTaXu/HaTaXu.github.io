@@ -24,7 +24,7 @@ tag:
 1. 与数据库中的记录没有任何关联，也就是没有与其相关联的数据库记录。
 2. 与`Session`没有任何关系，也就是没有通过`Session`对象的实例对其进行任何持久化的操作。\
 举例：
-```
+```java
 User user=new User(); // user是一个瞬时对象，在数据库的表中是没有记录和该对象相对应的。和session没有关系。
 user.setName(“ddd”);
 user.setBirthday(new Date());
@@ -43,7 +43,7 @@ session.save(user); //持久化状态
 2. 在数据库中有与之关联的记录。
 3. `Hibernate`会根据持久态对象的属性的变化而改变数据库中的相应记录。
 举例：
-```
+```java
 Session session = factory.openSession();
 Transaction tx = session.beginTransaction();
 session.save(stu); // persistent持久化状态
@@ -64,5 +64,3 @@ System.out.println(stu); // 脱管对象
 2. 比瞬时对象多了一个数据库记录标识值。
 3. 不在于`Session`相关联。
 4. 脱管对象一定是由持久态对象转化而来。
-  
-

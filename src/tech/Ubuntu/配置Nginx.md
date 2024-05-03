@@ -9,19 +9,19 @@ tag:
 
 # 配置 nginx
 ## 1. 拉取 nginx
-```sh
+```shell
 docker pull nginx
 ```
 ## 2. nginx 镜像的测试运行
-```sh
+```shell
 docker run --name nginx -p 80:80 -p 443:443 -d nginx
 ```
 ## 3. 复制容器内配置文件到容器外部挂载的配置文件路径
-```sh
+```shell
 docker container cp nginx:/etc/nginx/nginx.conf /etc/nginx/conf
 ```
 ## 4. nginx 镜像的正式运行
-```sh
+```shell
 docker run -d -p 80:80 -p 443:443 --name nginx \
 -v /etc/nginx/html:/usr/share/nginx/html \
 -v /etc/nginx/logs:/var/log/nginx  \
@@ -55,7 +55,7 @@ server {
 }
 ```
 ## 6. 重启 nginx 容器
-```sh
+```shell
 docker restart nginx
 ```
 ## 7. 进入 nginx 容器内部

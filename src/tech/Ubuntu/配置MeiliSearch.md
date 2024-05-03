@@ -9,11 +9,11 @@ tag:
 
 # 配置 MeiliSearch
 ## 1. 拉取 MeiliSearch 镜像
-```sh
+```shell
 docker pull getmeili/meilisearch:latest
 ```
 ## 2. 运行镜像，生成容器
-```sh
+```shell
 docker run -d --name meilisearch \
   -p 7700:7700 \
   -v /etc/meili_data:/meili_data \
@@ -28,7 +28,7 @@ docker run -d --name meilisearch \
 ### CURL命令简介
 >CURL（CommandLine Uniform Resource Locator），是一个利用 URL 语法，在命令行终端下使用的网络请求工具，支持 HTTP、HTTPS、FTP 等协议。CURL 也有用于程序开发使用的版本 libcurl。
 运行
-```sh
+```shell
 curl \
   -X GET 'http://localhost:7700/keys' \
   -H "Authorization: Bearer MASTER_KEY"
@@ -78,7 +78,7 @@ curl \
 ## 6. 操作索引 (index)
 ### creat index
 运行
-```sh
+```shell
 curl \
   -X POST 'http://localhost:7700/indexes' \
   -H 'Content-Type: application/json' \
