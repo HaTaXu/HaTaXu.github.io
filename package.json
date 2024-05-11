@@ -8,7 +8,8 @@
     "docs:build": "vuepress-vite build src",
     "docs:clean-dev": "vuepress-vite dev src --clean-cache",
     "docs:dev": "vuepress-vite dev src",
-    "docs:update-package": "pnpm dlx vp-update"
+    "docs:upgrade-package": "pnpm dlx vp-update",
+    "docs:update-package": "pnpm install"
   },
   "devDependencies": {
     "vue": "^3.4.27",
