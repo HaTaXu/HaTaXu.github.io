@@ -32,6 +32,12 @@ jobs:
       - name: 运行构建脚本
         run: pnpm run docs:build
 
+      - name: 显示当前路径
+        run: pwd
+
+      - name: 显示当前目录下的文件
+        run: ls
+
   deploy:
     needs: build
     environment:
@@ -39,12 +45,6 @@ jobs:
       url: ${{steps.deployment.outputs.page_url}}
     runs-on: ubuntu-latest
     steps:
-      - name: 显示当前路径
-        run: pwd
-
-      - name: 显示当前目录下的文件
-        run: ls -a
-
       - name: 设置 Pages
         uses: actions/configure-pages@v5
 
