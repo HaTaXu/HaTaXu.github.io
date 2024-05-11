@@ -1,13 +1,13 @@
 ---
-title: 配置AList
+title: 配置 AList
 category: Ubuntu
 tag:
   - docker
   - AList
   - Ubuntu
+dir:
+  order: 2
 ---
-
-# 配置 AList
 ## 1. 用 docker 拉取 AList 镜像
 ```shell
 docker pull hantx/alist:latest

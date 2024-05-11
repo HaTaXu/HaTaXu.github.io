@@ -5,9 +5,9 @@ tag:
   - nginx
   - Ubuntu
   - docker
+dir:
+  order: 1
 ---
-
-# 配置 nginx
 ## 1. 拉取 nginx
 ```shell
 docker pull nginx

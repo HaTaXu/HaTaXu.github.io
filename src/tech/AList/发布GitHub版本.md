@@ -6,9 +6,8 @@ tag:
   - AList
   - Github Actions
 ---
-
-# 发布 github 版本
 前后端均有涉及，更新时先按步骤更新前端代码并发布正确版本，之后才能保证更新后端时正确使用了同一版本，最后在发布后端版本时才可以保证正确更新了docker版本。
+
 ## 前端部分
 修改代码后提交到`github`中，会自动触发`github workflows`中的`build`工作流和`format`工作流。
 ### build

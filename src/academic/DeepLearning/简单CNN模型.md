@@ -5,9 +5,9 @@ tag:
   - CNN
   - python
   - torch
+dir:
+  order: 3
 ---
-
-# 简单 CNN 模型
 通过连续使用卷积和池化层的组合提取图像特征
 
 ## 定义常量

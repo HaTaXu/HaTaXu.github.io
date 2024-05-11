@@ -5,6 +5,8 @@ tag:
   - apt
   - Ubuntu
   - Docker
+dir:
+  order: 1
 ---
 
 # Ubuntu 初始化

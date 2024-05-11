@@ -6,8 +6,6 @@ tag:
   - AList
   - Github Actions
 ---
-
-# 发布 docker 版本
 发布`docker`版本只涉及后端自动化过程。
 
 ## 后端部分

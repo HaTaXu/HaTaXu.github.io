@@ -15,6 +15,8 @@ export const zhNavbar = navbar([
           { text: "基本概念", icon: "pen-to-square", link: "基本概念" },
           { text: "环境配置", icon: "pen-to-square", link: "环境配置" },
           { text: "简单 CNN 模型", icon: "pen-to-square", link: "简单CNN模型" },
+          { text: "VGG 模型", icon: "pen-to-square", link: "VGG模型" },
+          { text: "ViT 模型", icon: "pen-to-square", link: "ViT模型" },
         ],
       },
     ],
@@ -42,11 +44,36 @@ export const zhNavbar = navbar([
         ],
       },
       {
+        text: "Database",
+        icon: "fa-solid fa-database",
+        prefix: "Database/",
+        children: [
+          { text: "SQL 语法", icon: "pen-to-square", link: "SQL语法" },
+        ],
+      },
+      {
+        text: "设计模式",
+        icon: "fa-regular fa-lightbulb",
+        prefix: "DesignPattern/",
+        children: [
+          { text: "单例模式", icon: "pen-to-square", link: "单例模式" },
+        ],
+      },
+      {
         text: "GitHub Actions",
         icon: "fa-brands fa-github",
         prefix: "GitHub_Actions/",
         children: [
+          { text: "基本概念", icon: "pen-to-square", link: "基本概念" },
           { text: "自动爬虫", icon: "pen-to-square", link: "自动爬虫" },
+        ],
+      },
+      {
+        text: "JAVA开发",
+        icon: "fa-brands fa-java",
+        prefix: "JAVA/",
+        children: [
+          { text: "单例模式", icon: "pen-to-square", link: "单例模式" },
         ],
       },
       {

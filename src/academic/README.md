@@ -6,3 +6,5 @@ dir:
   link: false
   collapsible: true
 ---
+
+<Catalog />

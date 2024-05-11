@@ -1,13 +1,13 @@
 ---
-title: controller层
+title: controller 层
 category: SpringBoot
 tag:
   - controller
   - SpringBoot
   - Java
+dir:
+  order: 2
 ---
-
-# 基本概念
 控制层，控制业务逻辑service，控制请求和响应，负责前后端交互。\
 controller层主要调用Service层里面的接口控制具体的业务流程，不会在其中编写大量逻辑代码，同时也会接受并处理一些HTTP参数，例如session。
 ><font color=red>注意</font>：在CONTROLLER的实现类上也要加注解@RestController

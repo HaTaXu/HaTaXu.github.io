@@ -5,9 +5,9 @@ tag:
   - docker
   - MeiliSearch
   - Ubuntu
+dir:
+  order: 4
 ---
-
-# 配置 MeiliSearch
 ## 1. 拉取 MeiliSearch 镜像
 ```shell
 docker pull getmeili/meilisearch:latest
