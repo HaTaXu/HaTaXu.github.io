@@ -39,15 +39,15 @@ jobs:
       url: ${{steps.deployment.outputs.page_url}}
     runs-on: ubuntu-latest
     steps:
-      - name: 设置 Pages
-        uses: actions/configure-pages@v5
-
       - name: 显示当前路径
         run: pwd
 
       - name: 显示当前目录下的文件
         run: ls -a
-          
+
+      - name: 设置 Pages
+        uses: actions/configure-pages@v5
+
       - name: 上传 Artifact
         uses: actions/upload-pages-artifact@v3
         with:
