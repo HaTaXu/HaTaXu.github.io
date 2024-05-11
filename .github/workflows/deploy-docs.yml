@@ -43,14 +43,15 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: 显示当前路径
-        run: |
-          pwd
-          ls
+        run: pwd
+
+      - name: 显示当前目录下的文件
+        run: ls
           
       - name: 上传 Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'dist'
+          path: 'src/.vuepress/dist'
           
       - name: 部署至 GitHub Pages
         id: deployment
