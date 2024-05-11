@@ -12,6 +12,9 @@ permissions:
 
 jobs:
   build:
+    environment:
+      name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
     runs-on: ubuntu-latest
     steps:
       - name: 检出main分支下最近一次提交
@@ -38,20 +41,13 @@ jobs:
       - name: 显示当前目录下的文件
         run: ls
 
-  deploy:
-    needs: build
-    environment:
-      name: github-pages
-      url: ${{steps.deployment.outputs.page_url}}
-    runs-on: ubuntu-latest
-    steps:
       - name: 设置 Pages
         uses: actions/configure-pages@v5
 
       - name: 上传 Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: 'src/.vuepress/dist'
           
       - name: 部署至 GitHub Pages
         id: deployment
