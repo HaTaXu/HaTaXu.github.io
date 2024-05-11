@@ -16,9 +16,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: 检出main分支下最近一次提交
-        uses: actions/checkout@v4
-
       - name: 设置 pnpm
         uses: pnpm/action-setup@v4
         with:
@@ -30,6 +27,9 @@ jobs:
         with:
           node-version: latest
           cache: pnpm
+
+      - name: 检出main分支下最近一次提交
+        uses: actions/checkout@v4
 
       - name: 运行构建脚本
         run: pnpm run docs:build
@@ -46,7 +46,7 @@ jobs:
       - name: 显示当前路径
         run: |
           pwd
-          ll
+          ls
       - name: 上传 Artifact
         uses: actions/upload-pages-artifact@v3
         with:
