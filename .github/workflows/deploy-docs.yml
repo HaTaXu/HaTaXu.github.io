@@ -16,7 +16,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{steps.deployment.outputs.page_url}}
+      url: https://hataxu.github.io
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
