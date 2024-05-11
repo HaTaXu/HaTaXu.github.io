@@ -46,12 +46,12 @@ jobs:
         run: pwd
 
       - name: 显示当前目录下的文件
-        run: ls
+        run: ls -a
           
       - name: 上传 Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'src/.vuepress/dist'
+          path: './src/.vuepress/dist'
           
       - name: 部署至 GitHub Pages
         id: deployment
