@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - 'src/test.js'
 
 permissions:
   contents: read
@@ -43,14 +41,17 @@ jobs:
     steps:
       - name: 设置 Pages
         uses: actions/configure-pages@v5
+
       - name: 显示当前路径
         run: |
           pwd
           ls
+          
       - name: 上传 Artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: 'dist'
+          
       - name: 部署至 GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
