@@ -24,7 +24,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: latest
-          cache: "pnpm"
+          cache: pnpm
+          cache-dependency-path: "package-lock.json"
 
       - name: 检出main分支下最近一次提交
         uses: actions/checkout@v4
