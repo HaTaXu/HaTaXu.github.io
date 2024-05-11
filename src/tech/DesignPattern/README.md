@@ -1,6 +1,6 @@
 ---
 title: 设计模式
-icon: fa-regular fa-lightbulb
+icon: fa-solid fa-lightbulb
 index: false
 dir:
   link: false

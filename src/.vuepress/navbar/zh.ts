@@ -53,7 +53,7 @@ export const zhNavbar = navbar([
       },
       {
         text: "设计模式",
-        icon: "fa-regular fa-lightbulb",
+        icon: "fa-solid fa-lightbulb",
         prefix: "DesignPattern/",
         children: [
           { text: "单例模式", icon: "pen-to-square", link: "单例模式" },
