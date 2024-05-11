@@ -51,7 +51,7 @@ jobs:
       - name: 上传 Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './src/.vuepress/dist'
+          path: '/home/runner/work/HaTaXu.github.io/HaTaXu.github.io/src/.vuepress/dist'
           
       - name: 部署至 GitHub Pages
         id: deployment
