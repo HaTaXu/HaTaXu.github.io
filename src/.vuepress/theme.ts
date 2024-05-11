@@ -117,7 +117,7 @@ export default hopeTheme({
   navbarLayout: {
     start: ["Brand"],
     center: ["Links"],
-    end: ["Outlook", "fullscreen", "Repo", "MeiliSearch"],
+    end: ["Language", "Repo", "Outlook", "MeiliSearch"],
   },
 
   plugins: {
