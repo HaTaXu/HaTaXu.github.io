@@ -44,4 +44,5 @@ jobs:
           path: 'src/.vuepress/dist'
           
       - name: 部署至 GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
