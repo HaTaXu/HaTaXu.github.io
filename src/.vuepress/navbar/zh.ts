@@ -3,14 +3,14 @@ import { navbar } from "vuepress-theme-hope";
 export const zhNavbar = navbar([
   "/",
   {
-    text: "专业知识",
+    text: "深度学习",
     icon: "fa-solid fa-graduation-cap",
-    prefix: "/academic/",
+    prefix: "/DeepLearning/",
     children: [
       {
-        text: "深度学习",
+        text: "图像识别",
         icon: "fa-solid fa-robot",
-        prefix: "DeepLearning/",
+        prefix: "ImageRecognition/",
         children: [
           { text: "基本概念", icon: "pen-to-square", link: "基本概念" },
           { text: "环境配置", icon: "pen-to-square", link: "环境配置" },
@@ -22,52 +22,25 @@ export const zhNavbar = navbar([
     ],
   },
   {
-    text: "技术",
-    icon: "fa-solid fa-code",
-    prefix: "/tech/",
+    text: "设计",
+    icon: "fa-solid fa-graduation-cap",
+    prefix: "/Design/",
     children: [
       {
-        text: "AList",
-        icon: "fa-solid fa-list-ul",
-        prefix: "AList/",
-        children: [
-          { text: "发布 docker 版本", icon: "pen-to-square", link: "发布docker版本" },
-          { text: "发布 GitHub 版本", icon: "pen-to-square", link: "发布GitHub版本" },
-        ],
-      },
-      {
-        text: "CentOS",
-        icon: "fa-brands fa-centos",
-        prefix: "CentOS/",
-        children: [
-          { text: "CentOS 初始化", icon: "pen-to-square", link: "CentOS初始化" },
-        ],
-      },
-      {
-        text: "Database",
-        icon: "fa-solid fa-database",
-        prefix: "Database/",
-        children: [
-          { text: "SQL 语法", icon: "pen-to-square", link: "SQL语法" },
-        ],
-      },
-      {
         text: "设计模式",
-        icon: "fa-solid fa-lightbulb",
-        prefix: "DesignPattern/",
+        icon: "fa-solid fa-robot",
+        prefix: "Design_Pattern/",
         children: [
           { text: "单例模式", icon: "pen-to-square", link: "单例模式" },
         ],
       },
-      {
-        text: "GitHub Actions",
-        icon: "fa-brands fa-github",
-        prefix: "GitHub_Actions/",
-        children: [
-          { text: "基本概念", icon: "pen-to-square", link: "基本概念" },
-          { text: "自动爬虫", icon: "pen-to-square", link: "自动爬虫" },
-        ],
-      },
+    ],
+  },
+  {
+    text: "开发",
+    icon: "fa-solid fa-code",
+    prefix: "/Deployment/",
+    children: [
       {
         text: "JAVA开发",
         icon: "fa-brands fa-java",
@@ -87,6 +60,69 @@ export const zhNavbar = navbar([
         ],
       },
       {
+        text: "AList",
+        icon: "fa-solid fa-list-ul",
+        prefix: "AList/",
+        children: [
+          { text: "发布 docker 版本", icon: "pen-to-square", link: "发布docker版本" },
+          { text: "发布 GitHub 版本", icon: "pen-to-square", link: "发布GitHub版本" },
+        ],
+      },
+    ],
+  },
+  {
+    text: "运维",
+    icon: "fa-solid fa-graduation-cap",
+    prefix: "/Operation/",
+    children: [
+      {
+        text: "GitHub Actions",
+        icon: "fa-brands fa-github",
+        prefix: "GitHub_Actions/",
+        children: [
+          { text: "基本概念", icon: "pen-to-square", link: "基本概念" },
+          { text: "自动爬虫", icon: "pen-to-square", link: "自动爬虫" },
+        ],
+      },
+      {
+        text: "Gekins",
+        icon: "fa-brands fa-github",
+        prefix: "Gekins/",
+        children: [
+          { text: "基本概念", icon: "pen-to-square", link: "基本概念" },
+        ],
+      },
+    ],
+  },
+  {
+    text: "数据库",
+    icon: "fa-solid fa-graduation-cap",
+    prefix: "/Database/",
+    children: [
+      {
+        text: "基本概念",
+        icon: "fa-brands fa-github",
+        prefix: "base/",
+        children: [
+          { text: "SQL 语法", icon: "pen-to-square", link: "SQL语法" },
+        ],
+      },
+      {
+        text: "Oracle",
+        icon: "fa-brands fa-github",
+        prefix: "Oracle/",
+        children: [
+          { text: "SQL plus", icon: "pen-to-square", link: "sql_plus" },
+        ],
+      },
+    ],
+  },
+  {
+    text: "Linux",
+    icon: "fa-solid fa-graduation-cap",
+    prefix: "/Linux/",
+    children: [
+      {
         text: "Ubuntu",
         icon: "fa-brands fa-ubuntu",
         prefix: "Ubuntu/",
@@ -95,6 +131,14 @@ export const zhNavbar = navbar([
           { text: "配置 AList", icon: "pen-to-square", link: "配置AList" },
           { text: "配置 MeiliSearch", icon: "pen-to-square", link: "配置MeiliSearch" },
           { text: "配置 Nginx", icon: "pen-to-square", link: "配置Nginx" },
+        ],
+      },
+      {
+        text: "CentOS",
+        icon: "fa-brands fa-centos",
+        prefix: "CentOS/",
+        children: [
+          { text: "CentOS 初始化", icon: "pen-to-square", link: "CentOS初始化" },
         ],
       },
     ],
