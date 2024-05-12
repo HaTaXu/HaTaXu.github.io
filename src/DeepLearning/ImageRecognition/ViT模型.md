@@ -5,6 +5,5 @@ tag:
   - ViT
   - python
   - torch
-dir:
-  order: 5
+order: 5
 ---

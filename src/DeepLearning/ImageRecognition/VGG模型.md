@@ -5,6 +5,5 @@ tag:
   - VGG
   - python
   - torch
-dir:
-  order: 4
+order: 4
 ---

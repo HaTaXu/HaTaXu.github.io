@@ -5,8 +5,7 @@ tag:
   - CNN
   - python
   - torch
-dir:
-  order: 3
+order: 3
 ---
 通过连续使用卷积和池化层的组合提取图像特征
 
