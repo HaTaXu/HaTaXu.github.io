@@ -4,12 +4,12 @@ export const zhNavbar = navbar([
   "/",
   {
     text: "深度学习",
-    icon: "fa-solid fa-graduation-cap",
+    icon: "fa-solid fa-robot",
     prefix: "/DeepLearning/",
     children: [
       {
         text: "图像识别",
-        icon: "fa-solid fa-robot",
+        icon: "fa-solid fa-images",
         prefix: "ImageRecognition/",
         children: [
           { text: "基本概念", icon: "pen-to-square", link: "基本概念" },
@@ -23,12 +23,12 @@ export const zhNavbar = navbar([
   },
   {
     text: "设计",
-    icon: "fa-solid fa-graduation-cap",
+    icon: "fa-solid fa-lightbulb",
     prefix: "/Design/",
     children: [
       {
         text: "设计模式",
-        icon: "fa-solid fa-robot",
+        icon: "fa-solid fa-industry",
         prefix: "Design_Pattern/",
         children: [
           { text: "单例模式", icon: "pen-to-square", link: "单例模式" },
@@ -51,7 +51,7 @@ export const zhNavbar = navbar([
       },
       {
         text: "SpringBoot",
-        icon: "fa-brands fa-java",
+        icon: "fa-solid fa-crop-simple",
         prefix: "SpringBoot/",
         children: [
           { text: "基本概念", icon: "pen-to-square", link: "基本概念" },
@@ -63,7 +63,7 @@ export const zhNavbar = navbar([
   },
   {
     text: "部署 & 运维",
-    icon: "fa-solid fa-graduation-cap",
+    icon: "fa-solid fa-cloud-arrow-up",
     prefix: "/DeployOps/",
     children: [
       {
@@ -77,7 +77,7 @@ export const zhNavbar = navbar([
       },
       {
         text: "Gekins",
-        icon: "fa-brands fa-github",
+        icon: "fa-brands fa-jenkins",
         prefix: "Gekins/",
         children: [
           { text: "基本概念", icon: "pen-to-square", link: "基本概念" },
@@ -96,12 +96,12 @@ export const zhNavbar = navbar([
   },
   {
     text: "数据库",
-    icon: "fa-solid fa-graduation-cap",
+    icon: "fa-solid fa-database",
     prefix: "/Database/",
     children: [
       {
         text: "基本概念",
-        icon: "fa-brands fa-github",
+        icon: "fa-solid fa-sitemap",
         prefix: "base/",
         children: [
           { text: "SQL 语法", icon: "pen-to-square", link: "SQL语法" },
@@ -109,17 +109,17 @@ export const zhNavbar = navbar([
       },
       {
         text: "Oracle",
-        icon: "fa-brands fa-github",
+        icon: "fa-solid fa-database",
         prefix: "Oracle/",
         children: [
-          { text: "SQL plus", icon: "pen-to-square", link: "sql_plus" },
+          { text: "SQL * plus", icon: "pen-to-square", link: "sql_plus" },
         ],
       },
     ],
   },
   {
     text: "Linux",
-    icon: "fa-solid fa-graduation-cap",
+    icon: "fa-brands fa-linux",
     prefix: "/Linux/",
     children: [
       {

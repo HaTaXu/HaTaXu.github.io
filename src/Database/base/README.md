@@ -1,6 +1,6 @@
 ---
-title: 数据库
-icon: fa-solid fa-database
+title: 基本概念
+icon: fa-solid fa-sitemap
 index: false
 dir:
   link: false

@@ -1,5 +1,5 @@
 ---
-title: 深度学习
+title: 图像识别
 icon: fa-solid fa-images
 index: false
 dir:
