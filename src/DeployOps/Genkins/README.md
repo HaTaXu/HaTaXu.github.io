@@ -1,6 +1,6 @@
 ---
-title: CentOS
-icon: fa-brands fa-centos
+title: Genkins
+icon: fa-brands fa-jenkins
 index: false
 dir:
   link: false

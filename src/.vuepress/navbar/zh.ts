@@ -39,14 +39,14 @@ export const zhNavbar = navbar([
   {
     text: "开发",
     icon: "fa-solid fa-code",
-    prefix: "/Deployment/",
+    prefix: "/Develop/",
     children: [
       {
         text: "JAVA开发",
         icon: "fa-brands fa-java",
         prefix: "JAVA/",
         children: [
-          { text: "单例模式", icon: "pen-to-square", link: "单例模式" },
+          { text: "JVM 调优", icon: "pen-to-square", link: "JVM调优" },
         ],
       },
       {
@@ -59,21 +59,12 @@ export const zhNavbar = navbar([
           { text: "hibernate", icon: "pen-to-square", link: "hibernate" },
         ],
       },
-      {
-        text: "AList",
-        icon: "fa-solid fa-list-ul",
-        prefix: "AList/",
-        children: [
-          { text: "发布 docker 版本", icon: "pen-to-square", link: "发布docker版本" },
-          { text: "发布 GitHub 版本", icon: "pen-to-square", link: "发布GitHub版本" },
-        ],
-      },
     ],
   },
   {
-    text: "运维",
+    text: "部署 & 运维",
     icon: "fa-solid fa-graduation-cap",
-    prefix: "/Operation/",
+    prefix: "/DeployOps/",
     children: [
       {
         text: "GitHub Actions",
@@ -90,6 +81,15 @@ export const zhNavbar = navbar([
         prefix: "Gekins/",
         children: [
           { text: "基本概念", icon: "pen-to-square", link: "基本概念" },
+        ],
+      },
+      {
+        text: "AList",
+        icon: "fa-solid fa-list-ul",
+        prefix: "AList/",
+        children: [
+          { text: "发布 docker 版本", icon: "pen-to-square", link: "发布docker版本" },
+          { text: "发布 GitHub 版本", icon: "pen-to-square", link: "发布GitHub版本" },
         ],
       },
     ],
