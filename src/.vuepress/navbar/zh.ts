@@ -76,9 +76,9 @@ export const zhNavbar = navbar([
         ],
       },
       {
-        text: "Gekins",
+        text: "Jenkins",
         icon: "fa-brands fa-jenkins",
-        prefix: "Gekins/",
+        prefix: "Jenkins/",
         children: [
           { text: "基本概念", icon: "pen-to-square", link: "基本概念" },
         ],
@@ -112,7 +112,7 @@ export const zhNavbar = navbar([
         icon: "fa-solid fa-database",
         prefix: "Oracle/",
         children: [
-          { text: "SQL * plus", icon: "pen-to-square", link: "sql_plus" },
+          { text: "SQL*Plus", icon: "pen-to-square", link: "SQLPlus" },
         ],
       },
     ],
