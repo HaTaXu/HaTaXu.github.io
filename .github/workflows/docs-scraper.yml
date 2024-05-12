@@ -5,8 +5,12 @@ on:
     branches:
       - main
     paths:
-      - 'src/academic/**'
-      - 'src/tech/**'
+      - 'src/Database/**'
+      - 'src/DeepLearning/**'
+      - 'src/DeployOps/**'
+      - 'src/Design/**'
+      - 'src/Develop/**'
+      - 'src/Linux/**'
       - 'docs-scraper-config.json'
 
 jobs:
