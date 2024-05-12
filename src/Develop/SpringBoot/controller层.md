@@ -5,8 +5,7 @@ tag:
   - controller
   - SpringBoot
   - Java
-dir:
-  order: 2
+order: 2
 ---
 控制层，控制业务逻辑service，控制请求和响应，负责前后端交互。\
 controller层主要调用Service层里面的接口控制具体的业务流程，不会在其中编写大量逻辑代码，同时也会接受并处理一些HTTP参数，例如session。

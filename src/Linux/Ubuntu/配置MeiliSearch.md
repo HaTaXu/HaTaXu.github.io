@@ -5,8 +5,7 @@ tag:
   - docker
   - MeiliSearch
   - Ubuntu
-dir:
-  order: 4
+order: 4
 ---
 ## 1. 拉取 MeiliSearch 镜像
 ```shell

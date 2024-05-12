@@ -6,8 +6,7 @@ tag:
   - SpringBoot
   - Java
   - 数据库
-dir:
-  order: 3
+order: 3
 ---
 `Hibernate`就是一个持久层的`ORM`(`Object Relation Mapping`)框架。
 

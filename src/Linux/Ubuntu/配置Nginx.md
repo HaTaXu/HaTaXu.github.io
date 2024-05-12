@@ -5,8 +5,7 @@ tag:
   - nginx
   - Ubuntu
   - docker
-dir:
-  order: 1
+order: 3
 ---
 ## 1. 拉取 nginx
 ```shell

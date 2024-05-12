@@ -5,8 +5,7 @@ tag:
   - docker
   - AList
   - Ubuntu
-dir:
-  order: 2
+order: 2
 ---
 ## 1. 用 docker 拉取 AList 镜像
 ```shell

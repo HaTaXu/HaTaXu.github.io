@@ -4,6 +4,7 @@ icon: fa-solid fa-sitemap
 index: false
 dir:
   link: false
+  order: 1
 ---
 
 <Catalog />
